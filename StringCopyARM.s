@@ -4,7 +4,7 @@ BL strcopy
 swi 0x11
 strcopy:
 SUB sp,sp,#4
-STR sp,[sp,#0]
+STR r4,[sp,#0]
 mov r4,#0
 L1:
 ADD r2,r4,r1
